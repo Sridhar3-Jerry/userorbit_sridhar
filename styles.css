@@ -141,9 +141,9 @@ body {
 .cards-container.show-cards .card:nth-child(3) { animation-delay: 0.36s; }
 
 .card {
-    width: 480px;
-    min-width: 480px;
-    height: 560px;
+    width: 420px;
+    min-width: 420px;
+    height: 480px;
     padding: 7px;
     margin: 8px;
     transition: width 0.3s, height 0.3s, box-shadow 0.3s, transform 0.3s;
@@ -211,9 +211,9 @@ body {
 }
 
 .card:hover {
-    width: 495px;
-    min-width: 483px;
-    height: 565px;
+    width: 427px;
+    min-width: 427px;
+    height: 487px;
     transform: translateY(-28px);
     box-shadow:
         0 12px 40px rgba(79,140,255,0.22),
