@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Content Cards</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Your Logo</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="hero-section">
+            <h1>Welcome to UserOrbit!</h1>
+            <p class="hero-sub">Your all-in-one platform for customer support, onboarding, and engagement.</p>
+            <img src="https://undraw.co/api/illustrations/undraw_online_information_re_erks.svg" alt="Illustration" class="hero-img">
+        </section>
+        <section class="about-section">
+            <h2>About UserOrbit</h2>
+            <p>UserOrbit streamlines your customer support and onboarding experience. Our platform helps you connect, assist, and engage with your users efficiently, providing a seamless and delightful experience for both your team and your customers.</p>
+        </section>
+        <section class="features-section">
+            <h2>Features</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Fast Support</h3>
+                    <p>Instant access to help and resources for your users, reducing wait times and improving satisfaction.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Team Collaboration</h3>
+                    <p>Work together with your team to resolve issues quickly and efficiently, with shared inboxes and notes.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Analytics</h3>
+                    <p>Track user engagement, monitor support metrics, and gain insights to improve your service.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to our team at <a href="mailto:support@userorbit.com">support@userorbit.com</a> or use the floating icon for instant help.</p>
+        </section>
+    </main>
+
+    <!-- Content Icon -->
+    <div class="content-icon" id="contentIcon">
+        <i class="fas fa-plus"></i>
+    </div>
+
+    <!-- Welcome Modal -->
+    <div class="welcome-modal" id="welcomeModal" style="display:none;">
+        <div class="welcome-content">
+            <h2>Welcome!</h2>
+            <p>How can we help you today?</p>
+        </div>
+    </div>
+
+    <!-- Cards Container -->
+    <div class="cards-container" id="cardsContainer" style="display:none;">
+        <div class="cards-inner" id="cardsInner">
+            <div class="card card-orange" id="card1">
+                <button class="card-action-icon"><i class="fas fa-star"></i></button>
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-leaf"></i></div>
+                    <div>
+                        <h3>Howdy</h3>
+                        <p>We're here to help in any way we can.</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <button class="main-action">Request a demo</button>
+                    <div class="info-section">
+                        <h4>Learn more with Tours</h4>
+                        <ul>
+                            <li><i class="fas fa-book"></i> Getting started <span>Learn the basics</span></li>
+                            <li><i class="fas fa-plug"></i> Integrating your tech stack <span>How to connect your tools</span></li>
+                            <li><i class="fas fa-users"></i> Adding your teammates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-purple" id="card2">
+                <button class="card-action-icon"><i class="fas fa-heart"></i></button>
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-user-circle"></i></div>
+                    <div>
+                        <h3>Hi, Suhita</h3>
+                        <p>What do you need help with today?</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="search-section">
+                        <input type="text" placeholder="Search our Help Center">
+                    </div>
+                    <div class="info-section">
+                        <div class="status"><i class="fas fa-exclamation-triangle"></i> Status: Partially degraded</div>
+                        <div class="order"><i class="fas fa-box"></i> Order status <span>Check on your recent orders</span></div>
+                        <div class="newsletter">
+                            <input type="email" placeholder="youremail@example.com">
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-blue" id="card3">
+                <button class="card-action-icon"><i class="fas fa-info"></i></button>
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-comment-dots"></i></div>
+                    <div>
+                        <h3>Welcome!</h3>
+                        <p>How can we help?</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="conversation-section">
+                        <p>Let's have a conversation</p>
+                        <div class="avatars">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User1">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User2">
+                            <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="User3">
+                        </div>
+                        <div class="reply-time">Our usual time to reply <b>A few minutes</b></div>
+                        <button class="main-action">Send us a message</button>
+                    </div>
+                    <div class="search-section">
+                        <input type="text" placeholder="Search our Help Center">
+                        <button><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <div class="blog-section">
+                        <img src="https://via.placeholder.com/80x40?text=SALES" alt="Blog post">
+                        <div>
+                            <b>Blog post - Learn how to increase sales with live chat</b>
+                            <p>How to use Examplly when engaging</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
